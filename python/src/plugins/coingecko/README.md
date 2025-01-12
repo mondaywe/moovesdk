@@ -1,1 +1,1 @@
-## Goat SDK Coingecko Plugin
+## PATH SDK Coingecko Plugin

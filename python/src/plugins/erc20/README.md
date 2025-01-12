@@ -1,1 +1,1 @@
-## Goat SDK ERC20 Plugin
+## PATH SDK ERC20 Plugin

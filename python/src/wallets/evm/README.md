@@ -1,1 +1,1 @@
-## Goat SDK EVM Wallet
+## PATH SDK EVM Wallet

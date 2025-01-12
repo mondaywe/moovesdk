@@ -12,11 +12,11 @@ from web3.middleware.signing import construct_sign_and_send_raw_middleware
 from eth_account.signers.local import LocalAccount
 from eth_account import Account
 
-from goat_adapters.langchain import get_on_chain_tools
-from goat_plugins.erc20.token import PEPE, USDC
-from goat_plugins.erc20 import erc20, ERC20PluginOptions
-from goat_wallets.evm import send_eth
-from goat_wallets.web3 import Web3EVMWalletClient
+from path_adapters.langchain import get_on_chain_tools
+from path_plugins.erc20.token import PEPE, USDC
+from path_plugins.erc20 import erc20, ERC20PluginOptions
+from path_wallets.evm import send_eth
+from path_wallets.web3 import Web3EVMWalletClient
 
 # Initialize Web3 and account
 w3 = Web3(Web3.HTTPProvider(os.getenv("RPC_PROVIDER_URL")))

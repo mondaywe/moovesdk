@@ -1,5 +1,5 @@
-# Goat 🐐 - Python
+# PATH - Python
 
-[Docs](https://ohmygoat.dev) | [Examples](https://github.com/goat-sdk/goat/tree/main/typescript/examples) | [Discord](https://discord.gg/goat-sdk)
+[Examples](https://github.com/path-sdk/path/tree/main/python/examples)
 
-
+A Python SDK for connecting AI agents to Solana and other blockchains. Primary focus on Solana's ecosystem with additional support for EVM chains.

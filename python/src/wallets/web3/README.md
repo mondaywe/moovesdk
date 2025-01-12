@@ -1,1 +1,1 @@
-## Goat SDK Web3 Wallet
+## PATH SDK Web3 Wallet

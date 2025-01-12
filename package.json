@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "goat-repo",
+  "name": "path-repo",
   "version": "0.1.0",
   "scripts": {
     "build": "pnpm turbo build",
@@ -15,14 +15,14 @@
     "pnpm": ">=9",
     "yarn": "please-use-pnpm"
   },
-  "homepage": "https://github.com/crossmint/goat",
+  "homepage": "https://github.com/path-sdk/path",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/crossmint/goat.git"
+    "url": "git+https://github.com/path-sdk/path.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/crossmint/goat/issues"
+    "url": "https://github.com/path-sdk/path/issues"
   },
   "keywords": [
     "ai",

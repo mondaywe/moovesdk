@@ -1,1 +1,1 @@
-## Goat SDK Langchain Adapter
+## PATH SDK Langchain Adapter
