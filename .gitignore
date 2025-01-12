@@ -3,9 +3,6 @@ node_modules/
 .pnp/
 .pnp.js
 
-# Documentation
-docs/
-
 # Build outputs
 dist/
 build/
