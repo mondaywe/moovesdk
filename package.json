@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "path-repo",
+  "name": "nectere-repo",
   "version": "0.1.0",
   "scripts": {
     "build": "pnpm turbo build",
@@ -15,14 +15,14 @@
     "pnpm": ">=9",
     "yarn": "please-use-pnpm"
   },
-  "homepage": "https://github.com/path-sdk/path",
+  "homepage": "https://github.com/nectere-sdk/nectere",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/path-sdk/path.git"
+    "url": "git+https://github.com/nectere-sdk/nectere.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/path-sdk/path/issues"
+    "url": "https://github.com/nectere-sdk/nectere/issues"
   },
   "keywords": [
     "ai",

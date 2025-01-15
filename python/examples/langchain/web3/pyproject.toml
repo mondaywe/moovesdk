@@ -1,12 +1,12 @@
 [tool.poetry]
-name = "path-sdk-example-langchain-web3"
+name = "nectere-sdk-example-langchain-web3"
 version = "0.1.0"
-description = "PATH example for Langchain with web3.py"
+description = "Nectere example for Langchain with web3.py"
 authors = ["Andrea Villa <andreakarimodm@gmail.com>"]
 readme = "README.md"
-keywords = ["path", "sdk", "web3", "agents", "ai"]
-homepage = "https://github.com/path-sdk/path"
-repository = "https://github.com/path-sdk/path"
+keywords = ["nectere", "sdk", "web3", "agents", "ai"]
+homepage = "https://github.com/nectere-sdk/nectere"
+repository = "https://github.com/nectere-sdk/nectere"
 packages = [
     { include = "src" },
 ]
@@ -17,18 +17,18 @@ langchain = "^0.3.2"
 langchain-openai = "^0.2.14"
 python-dotenv = "^1.0.1" 
 web3 = "^6.20.3"
-path-sdk = "^0.1.0"
-path-sdk-wallet-evm = "^0.1.0"
-path-sdk-wallet-web3 = "^0.1.0"
-path-sdk-plugin-erc20 = "^0.1.0"
-path-sdk-adapter-langchain = "^0.1.0"
+nectere-sdk = "^0.1.0"
+nectere-sdk-wallet-evm = "^0.1.0"
+nectere-sdk-wallet-web3 = "^0.1.0"
+nectere-sdk-plugin-erc20 = "^0.1.0"
+nectere-sdk-adapter-langchain = "^0.1.0"
 
 [tool.poetry.group.test.dependencies]
 pytest = "^8.3.4"
 pytest-asyncio = "^0.25.0"
 
 [tool.poetry.urls]
-"Bug Tracker" = "https://github.com/path-sdk/path/issues"
+"Bug Tracker" = "https://github.com/nectere-sdk/nectere/issues"
 
 [tool.pytest.ini_options]
 addopts = [
@@ -43,11 +43,11 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.8.6"
-path-sdk = { path = "../../../src/path-sdk", develop = true }
-path-sdk-wallet-evm = { path = "../../../src/wallets/evm", develop = true }
-path-sdk-wallet-web3 = { path = "../../../src/wallets/web3", develop = true }
-path-sdk-plugin-erc20 = { path = "../../../src/plugins/erc20", develop = true }
-path-sdk-adapter-langchain = { path = "../../../src/adapters/langchain", develop = true }
+nectere-sdk = { path = "../../../src/nectere-sdk", develop = true }
+nectere-sdk-wallet-evm = { path = "../../../src/wallets/evm", develop = true }
+nectere-sdk-wallet-web3 = { path = "../../../src/wallets/web3", develop = true }
+nectere-sdk-plugin-erc20 = { path = "../../../src/plugins/erc20", develop = true }
+nectere-sdk-adapter-langchain = { path = "../../../src/adapters/langchain", develop = true }
 
 [tool.ruff]
 line-length = 120

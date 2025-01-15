@@ -1,11 +1,11 @@
 <div align="center">
-[Examples](https://github.com/path-sdk/path/tree/main/python/examples)
+[Examples](https://github.com/nectere-sdk/nectere/tree/main/python/examples)
 
-PATH is free software, MIT licensed.
+Nectere is free software, MIT licensed.
 </div>
 
-## PATH
-PATH (Protocol Agent Toolkit Hub) is an open-source framework for adding blockchain tools to your AI agent, with primary focus on Solana and support for EVM chains.
+## Nectere
+Nectere is an open-source framework for adding blockchain tools to your AI agent, with primary focus on Solana and support for EVM chains.
 
 **Problem**: 
 
@@ -14,11 +14,11 @@ For developers without blockchain expertise, finding clear instructions to perfo
 
 **Solution**: 
 
-PATH solves this by providing an open-source, provider-agnostic framework that abstracts away all these combinations.
+Nectere solves this by providing an open-source, provider-agnostic framework that abstracts away all these combinations.
 
-- **For agent developers**: PATH offers an always-growing catalog of ready made blockchain actions (sending tokens, using DeFi protocols, ...) that can be imported as tools into your existing agent. It works with the most popular agent frameworks (Langchain, Vercel's AI SDK, Eliza, etc), with primary support for Solana and additional support for 30+ EVM chains (Base, Polygon, Mode, ...).
+- **For agent developers**: Nectere offers an always-growing catalog of ready made blockchain actions (sending tokens, using DeFi protocols, ...) that can be imported as tools into your existing agent. It works with the most popular agent frameworks (Langchain, Vercel's AI SDK, Eliza, etc), with primary support for Solana and additional support for 30+ EVM chains (Base, Polygon, Mode, ...).
 
-- **For dApp / smart contract developers**: develop a plug-in in PATH, and allow agents built with any of the most popular agent development frameworks to access your service.
+- **For dApp / smart contract developers**: develop a plug-in in Nectere, and allow agents built with any of the most popular agent development frameworks to access your service.
 
 ### Key features
 1. **Works Everywhere**: Compatible with Langchain, Vercel's AI SDK, Eliza, and more.
@@ -27,7 +27,7 @@ PATH solves this by providing an open-source, provider-agnostic framework that a
 4. **Customizable**: Use or build plugins for any onchain functionality (sending tokens, checking wallet balance, etc) and protocol (Jupiter, Meteora, Uniswap, etc).
 
 ### How it works
-PATH plugs into your agents tool calling capabilities adding all the functions your agent needs to interact with the blockchain. 
+Nectere plugs into your agents tool calling capabilities adding all the functions your agent needs to interact with the blockchain. 
 
 High-level, here's how it works:
 
@@ -47,7 +47,7 @@ tools = get_tools(wallet, plugins=[
 
 #### Create custom tools
 ```python
-from path import WalletClientBase, create_tool
+from nectere import WalletClientBase, create_tool
 from pydantic import BaseModel, Field
 
 class GetBalanceParameters(BaseModel):
@@ -76,4 +76,4 @@ response = agent_executor.invoke({
 })
 ```
 
-See [here](https://github.com/path-sdk/path/tree/main/python/examples) for more examples.
+See [here](https://github.com/nectere-sdk/nectere/tree/main/python/examples) for more examples.

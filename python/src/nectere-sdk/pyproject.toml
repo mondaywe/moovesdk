@@ -1,21 +1,20 @@
 [tool.poetry]
-name = "nectere-sdk-wallet-web3"
+name = "nectere-sdk"
 version = "0.1.1"
-description = "Nectere SDK Web3 wallet implementation"
+description = "Nectere is an open-source framework for connecting AI agents to any onchain app"
 authors = ["Andrea Villa <andreakarimodm@gmail.com>"]
 readme = "README.md"
-keywords = ["nectere", "sdk", "web3", "agents", "ai", "evm", "wallet"]
+keywords = ["nectere", "sdk", "web3", "agents", "ai"]
 homepage = "https://github.com/nectere-sdk/nectere"
 repository = "https://github.com/nectere-sdk/nectere"
 packages = [
-    { include = "nectere_wallets/web3" },
+    { include = "nectere" },
 ]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-nectere-sdk = "^0.1.0"
-web3 = "^6.20.3"
-nectere-sdk-wallet-evm = "^0.1.0"
+pydantic = "^2.10.0"
+asyncio = "^3.4.1"
 
 [tool.poetry.group.test.dependencies]
 pytest = "^8.3.4"
@@ -37,8 +36,6 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.8.6"
-nectere-sdk = { path = "../../nectere-sdk", develop = true }
-nectere-sdk-wallet-evm = { path = "../../wallets/evm", develop = true }
 
 [tool.ruff]
 line-length = 120
