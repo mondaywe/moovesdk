@@ -1,19 +1,19 @@
 [tool.poetry]
-name = "nectere-sdk-adapter-langchain"
+name = "bookbag-sdk-adapter-langchain"
 version = "0.1.0"
-description = "Nectere adapter for LangChain"
+description = "Bookbag adapter for LangChain"
 authors = ["Andrea Villa <andreakarimodm@gmail.com>"]
 readme = "README.md"
-keywords = ["nectere", "sdk", "web3", "agents", "ai"]
-homepage = "https://github.com/nectere-sdk/nectere"
-repository = "https://github.com/nectere-sdk/nectere"
+keywords = ["bookbag", "sdk", "web3", "agents", "ai"]
+homepage = "https://github.com/bookbag-sdk/bookbag"
+repository = "https://github.com/bookbag-sdk/bookbag"
 packages = [
-    { include = "nectere_adapters/langchain" },
+    { include = "bookbag_adapters/langchain" },
 ] 
 
 [tool.poetry.dependencies]
 python = "^3.10"
-nectere-sdk = "^0.1.0"
+bookbag-sdk = "^0.1.0"
 langchain = "^0.3.14"
 
 [tool.poetry.group.test.dependencies]
@@ -21,7 +21,7 @@ pytest = "^8.3.4"
 pytest-asyncio = "^0.25.0"
 
 [tool.poetry.urls]
-"Bug Tracker" = "https://github.com/nectere-sdk/nectere/issues"
+"Bug Tracker" = "https://github.com/bookbag-sdk/bookbag/issues"
 
 [tool.pytest.ini_options]
 addopts = [
@@ -36,7 +36,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.8.6"
-nectere-sdk = { path = "../../nectere-sdk", develop = true }
+bookbag-sdk = { path = "../../bookbag-sdk", develop = true }
 
 [tool.ruff]
 line-length = 120

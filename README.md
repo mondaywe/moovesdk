@@ -1,79 +1,118 @@
 <div align="center">
-[Examples](https://github.com/nectere-sdk/nectere/tree/main/python/examples)
+  <img src="logo.jpg" alt="Bookbag" width="100" height="100">
+  <h1>Bookbag</h1>
+  <p>All-in-one framework for Solana AI development and learning</p>
+  <p>A passion project by <a href="https://x.com/shek_dev">@shek_dev</a></p>
 
-Nectere is free software, MIT licensed.
 </div>
 
-## Nectere
-Nectere is an open-source framework for adding blockchain tools to your AI agent, with primary focus on Solana and support for EVM chains.
+<div align="center">
 
-**Problem**: 
+  <a href="https://x.com/bookbag">
+    <img src="https://img.shields.io/twitter/follow/bookbag?style=social" alt="Twitter Follow">
+  </a>
+</div>
 
-Making agents perform onchain actions is tedious. The ecosystem is heavily fragmented, spanning 5+ popular agent development frameworks, multiple programming languages, and dozens of different blockchains and wallet architectures.
-For developers without blockchain expertise, finding clear instructions to perform simple actions - like sending SPL tokens or interacting with Solana programs - is nearly impossible.
+## Overview
 
-**Solution**: 
+Bookbag is an open-source framework that empowers AI agents with Solana-native capabilities. Built from the ground up for Solana, it provides a comprehensive suite of tools for building intelligent on-chain applications:
 
-Nectere solves this by providing an open-source, provider-agnostic framework that abstracts away all these combinations.
+- 🎯 **Solana-Native**: Deep integration with Solana's ecosystem - SPL tokens, Metaplex NFTs, and Jupiter DEX
+- 🤖 **AI-Powered**: LangChain integration for natural language interactions with Solana programs and data
+- 📊 **Real-Time**: Live market data through Pyth oracles and automated trading strategies
+- 🔒 **Secure**: AI-driven program analysis and security scanning for Solana smart contracts
 
-- **For agent developers**: Nectere offers an always-growing catalog of ready made blockchain actions (sending tokens, using DeFi protocols, ...) that can be imported as tools into your existing agent. It works with the most popular agent frameworks (Langchain, Vercel's AI SDK, Eliza, etc), with primary support for Solana and additional support for 30+ EVM chains (Base, Polygon, Mode, ...).
+## Features
 
-- **For dApp / smart contract developers**: develop a plug-in in Nectere, and allow agents built with any of the most popular agent development frameworks to access your service.
+- 🌞 **Solana-First AI**
+  - LangChain integration for Solana operations
+  - SPL token and NFT interactions
+  - Jupiter DEX aggregation
+  - Solana program analysis
+  - Metaplex metadata handling
 
-### Key features
-1. **Works Everywhere**: Compatible with Langchain, Vercel's AI SDK, Eliza, and more.
-2. **Solana First**: Deep integration with Solana's ecosystem including SPL tokens, NFTs, and DeFi protocols.
-3. **Multi-Chain**: Primary support for Solana with additional support for EVM chains.
-4. **Customizable**: Use or build plugins for any onchain functionality (sending tokens, checking wallet balance, etc) and protocol (Jupiter, Meteora, Uniswap, etc).
+- 🤖 **AI Capabilities**
+  - Natural language Solana interactions
+  - Automated DeFi strategies on Solana
+  - NFT collection analysis
+  - Program vulnerability scanning
+  - Token sentiment analysis
 
-### How it works
-Nectere plugs into your agents tool calling capabilities adding all the functions your agent needs to interact with the blockchain. 
+- 🛠️ **Developer Tools**
+  - Type-safe Python SDK
+  - Solana wallet abstractions
+  - Program deployment helpers
+  - Async/await support
+  - Comprehensive testing utilities
 
-High-level, here's how it works:
+## Examples
 
-#### Configure the wallet you want to use
+### Solana Trading Bot
 ```python
-# Create a wallet client
-wallet = SolanaWalletClient()
+from bookbag.agents import SolanaTrader
+from bookbag.plugins import JupiterDex, PythOracle
+from bookbag.strategies import MeanReversion
 
-# Get all available tools
-tools = get_tools(wallet, plugins=[
-    JupiterPlugin(),
-    SPLTokenPlugin(),
-    # EVM plugins also available
-    ERC20Plugin()
-])
+# Create an AI-powered Solana trading bot
+agent = SolanaTrader(
+    strategy=MeanReversion(),
+    plugins=[
+        JupiterDex(),    # Best execution on Solana
+        PythOracle()     # Real-time price data
+    ]
+)
+
+# Train on Solana market data
+await agent.train(
+    pairs=["SOL/USDC", "BONK/USDC"],
+    timeframe="1h",
+    periods=168
+)
+
+# Start automated trading
+await agent.trade(
+    capital=100,
+    slippage=0.1
+)
 ```
 
-#### Create custom tools
+### Program Analysis
 ```python
-from nectere import WalletClientBase, create_tool
-from pydantic import BaseModel, Field
+from bookbag.agents import ProgramAnalyzer
+from bookbag.plugins import AnchorScanner
 
-class GetBalanceParameters(BaseModel):
-    address: str = Field(description="The address to get the balance of")
+# Analyze Solana program security
+analyzer = ProgramAnalyzer(
+    plugins=[AnchorScanner()]
+)
 
-@Tool({
-    "description": "Get the balance of an address",
-    "parameters": GetBalanceParameters
-})
-def get_balance(params: dict) -> str:
-    balance = await wallet.balance_of(params["address"])
-    return f"{balance.value} {balance.symbol}"
+# Get AI-powered insights
+analysis = await analyzer.analyze(
+    program_id="ABC123...",
+    cluster="mainnet"
+)
+
+print(analysis.security_score)
+print(analysis.optimization_tips)
 ```
 
-#### Connect it to your agent framework of choice
-```python
-# Initialize LLM
-llm = ChatOpenAI(model="gpt-4")
+## Installation
 
-# Create the agent
-agent = create_structured_chat_agent(llm=llm, tools=tools, prompt=prompt)
+```bash
+# Core SDK with Solana features
+pip install "bookbag-sdk[solana]"
 
-# Execute the agent
-response = agent_executor.invoke({
-    "input": "Swap 1 SOL for USDC using Jupiter"
-})
+# Minimal installation
+pip install bookbag-sdk
+
+# Optional plugins
+pip install bookbag-sdk-plugin-jupiter bookbag-sdk-plugin-pyth
 ```
 
-See [here](https://github.com/nectere-sdk/nectere/tree/main/python/examples) for more examples.
+## Links
+
+Follow [@bookbag](https://x.com/bookbag) and [@shek_dev](https://x.com/shek_dev)
+
+## License
+
+Bookbag is open source under the [MIT License](LICENSE).

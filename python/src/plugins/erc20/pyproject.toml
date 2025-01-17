@@ -1,27 +1,27 @@
 [tool.poetry]
-name = "nectere-sdk-plugin-erc20"
+name = "bookbag-sdk-plugin-erc20"
 version = "0.1.0"
-description = "Nectere plugin for ERC20"
+description = "Bookbag plugin for ERC20"
 authors = ["Andrea Villa <andreakarimodm@gmail.com>"]
 readme = "README.md"
-keywords = ["nectere", "sdk", "web3", "agents", "ai"]
-homepage = "https://github.com/nectere-sdk/nectere"
-repository = "https://github.com/nectere-sdk/nectere"
+keywords = ["bookbag", "sdk", "web3", "agents", "ai"]
+homepage = "https://github.com/bookbag-sdk/bookbag"
+repository = "https://github.com/bookbag-sdk/bookbag"
 packages = [
-    { include = "nectere_plugins/erc20" },
+    { include = "bookbag_plugins/erc20" },
 ] 
 
 [tool.poetry.dependencies]
 python = "^3.10"
-nectere-sdk = "^0.1.0"
-nectere-sdk-wallet-evm = "^0.1.0"
+bookbag-sdk = "^0.1.0"
+bookbag-sdk-wallet-evm = "^0.1.0"
 
 [tool.poetry.group.test.dependencies]
 pytest = "^8.3.4"
 pytest-asyncio = "^0.25.0"
 
 [tool.poetry.urls]
-"Bug Tracker" = "https://github.com/nectere-sdk/nectere/issues"
+"Bug Tracker" = "https://github.com/bookbag-sdk/bookbag/issues"
 
 [tool.pytest.ini_options]
 addopts = [
@@ -36,8 +36,8 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.8.6"
-nectere-sdk = { path = "../../nectere-sdk", develop = true }
-nectere-sdk-wallet-evm = { path = "../../wallets/evm", develop = true }
+bookbag-sdk = { path = "../../bookbag-sdk", develop = true }
+bookbag-sdk-wallet-evm = { path = "../../wallets/evm", develop = true }
 
 [tool.ruff]
 line-length = 120

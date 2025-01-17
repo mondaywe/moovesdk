@@ -1,14 +1,14 @@
 [tool.poetry]
-name = "nectere-sdk"
+name = "bookbag-sdk"
 version = "0.1.1"
-description = "Nectere is an open-source framework for connecting AI agents to any onchain app"
+description = "Bookbag is an open-source framework for connecting AI agents to any onchain app"
 authors = ["Andrea Villa <andreakarimodm@gmail.com>"]
 readme = "README.md"
-keywords = ["nectere", "sdk", "web3", "agents", "ai"]
-homepage = "https://github.com/nectere-sdk/nectere"
-repository = "https://github.com/nectere-sdk/nectere"
+keywords = ["bookbag", "sdk", "web3", "agents", "ai"]
+homepage = "https://github.com/bookbag-sdk/bookbag"
+repository = "https://github.com/bookbag-sdk/bookbag"
 packages = [
-    { include = "nectere" },
+    { include = "bookbag" },
 ]
 
 [tool.poetry.dependencies]
@@ -21,7 +21,7 @@ pytest = "^8.3.4"
 pytest-asyncio = "^0.25.0"
 
 [tool.poetry.urls]
-"Bug Tracker" = "https://github.com/nectere-sdk/nectere/issues"
+"Bug Tracker" = "https://github.com/bookbag-sdk/bookbag/issues"
 
 [tool.pytest.ini_options]
 addopts = [
