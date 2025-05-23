@@ -1,4 +1,4 @@
-from nectere.decorators.tool import Tool
+from moove.decorators.tool import Tool
 from .parameters import (
     GetTokenInfoBySymbolParameters,
     GetTokenBalanceParameters,
@@ -12,7 +12,7 @@ from .parameters import (
 )
 from .token import Token
 from .abi import ERC20_ABI
-from nectere_wallets.evm import EVMWalletClient
+from moove_wallets.evm import EVMWalletClient
 
 
 class Erc20Service:

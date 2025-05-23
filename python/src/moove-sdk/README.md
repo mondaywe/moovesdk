@@ -1,23 +1,23 @@
-# Nectere - Python SDK
+# MooveSDK - Python SDK
 
-Nectere is an open-source framework for connecting AI agents to any onchain app, with primary focus on Solana and support for EVM chains.
+MooveSDK is an open-source framework for connecting AI agents to any onchain app, with primary focus on Solana and support for EVM chains.
 
 ## Installation
 
 ```bash
-pip install nectere-sdk
+pip install moove-sdk
 ```
 
 Or with Poetry:
 
 ```bash
-poetry add nectere-sdk
+poetry add moove-sdk
 ```
 
 ## Quick Start
 
 ```python
-from nectere import WalletClientBase, create_tool
+from moove import WalletClientBase, create_tool
 from pydantic import BaseModel, Field
 
 # Create a wallet client
@@ -55,15 +55,15 @@ tools = get_tools(wallet, plugins=[
 
 ## Examples
 
-Check out our [examples directory](https://github.com/nectere-sdk/nectere/tree/main/python/examples) for complete working examples.
+Check out our [examples directory](https://github.com/moove-sdk/moove/tree/main/python/examples) for complete working examples.
 
 ## Development
 
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/nectere-sdk/nectere.git
-cd nectere/python
+git clone https://github.com/moove-sdk/moove.git
+cd moove/python
 ```
 
 2. Install dependencies:

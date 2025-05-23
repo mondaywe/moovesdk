@@ -1,7 +1,7 @@
 {
     "folders": [
         {
-            "name": "🌿 Nectere",
+            "name": "🌿 MooveSDK",
             "path": "."
         },
         {
@@ -10,7 +10,7 @@
         },
         {
             "name": "🌋 Core",
-            "path": "./python/src/nectere-sdk"
+            "path": "./python/src/moove-sdk"
         },
         // Adapters
         {

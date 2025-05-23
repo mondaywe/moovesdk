@@ -1,8 +1,8 @@
 from dataclasses import dataclass
 from typing import List
 
-from nectere.classes.plugin_base import PluginBase
-from nectere.types.chain import Chain
+from moove.classes.plugin_base import PluginBase
+from moove.types.chain import Chain
 from .service import Erc20Service
 from .token import Token, get_tokens_for_network
 

@@ -1,14 +1,14 @@
 [tool.poetry]
-name = "bookbag-sdk"
+name = "moove-sdk"
 version = "0.1.1"
-description = "Bookbag is an open-source framework for connecting AI agents to any onchain app"
+description = "MooveSDK is an open-source framework for connecting AI agents to any onchain app"
 authors = ["Andrea Villa <andreakarimodm@gmail.com>"]
 readme = "README.md"
-keywords = ["bookbag", "sdk", "web3", "agents", "ai"]
-homepage = "https://github.com/bookbag-sdk/bookbag"
-repository = "https://github.com/bookbag-sdk/bookbag"
+keywords = ["moove", "sdk", "web3", "agents", "ai"]
+homepage = "https://github.com/mondaywe/moovesdk"
+repository = "https://github.com/mondaywe/moovesdk"
 packages = [
-    { include = "bookbag" },
+    { include = "moove" },
 ]
 
 [tool.poetry.dependencies]
@@ -21,7 +21,7 @@ pytest = "^8.3.4"
 pytest-asyncio = "^0.25.0"
 
 [tool.poetry.urls]
-"Bug Tracker" = "https://github.com/bookbag-sdk/bookbag/issues"
+"Bug Tracker" = "https://github.com/mondaywe/moovesdk/issues"
 
 [tool.pytest.ini_options]
 addopts = [

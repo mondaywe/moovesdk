@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "nectere-repo",
+  "name": "moove-sdk-repo",
   "version": "0.1.0",
   "scripts": {
     "build": "pnpm turbo build",
@@ -15,14 +15,14 @@
     "pnpm": ">=9",
     "yarn": "please-use-pnpm"
   },
-  "homepage": "https://github.com/nectere-sdk/nectere",
+  "homepage": "https://github.com/mondaywe/moovesdk",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nectere-sdk/nectere.git"
+    "url": "git+https://github.com/mondaywe/moovesdk.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nectere-sdk/nectere/issues"
+    "url": "https://github.com/mondaywe/moovesdk/issues"
   },
   "keywords": [
     "ai",

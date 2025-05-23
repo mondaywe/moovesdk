@@ -1,5 +1,5 @@
 import aiohttp
-from nectere.decorators.tool import Tool
+from moove.decorators.tool import Tool
 from .parameters import GetCoinPriceParameters, GetTrendingCoinsParameters, SearchCoinsParameters
 
 class CoinGeckoService:

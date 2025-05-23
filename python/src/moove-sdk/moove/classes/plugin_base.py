@@ -3,10 +3,10 @@ import inspect
 from abc import ABC, abstractmethod
 from typing import List, Any, TypeVar, Generic
 
-from nectere.classes.tool_base import ToolBase, create_tool
-from nectere.classes.wallet_client_base import WalletClientBase
-from nectere.types.chain import Chain
-from nectere.decorators.tool import StoredToolMetadata, TOOL_METADATA_KEY
+from moove.classes.tool_base import ToolBase, create_tool
+from moove.classes.wallet_client_base import WalletClientBase
+from moove.types.chain import Chain
+from moove.decorators.tool import StoredToolMetadata, TOOL_METADATA_KEY
 
 TWalletClient = TypeVar("TWalletClient", bound=WalletClientBase)
 

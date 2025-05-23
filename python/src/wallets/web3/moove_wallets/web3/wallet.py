@@ -1,14 +1,14 @@
 from typing import Dict, Optional
 from eth_typing import ChecksumAddress, HexStr
-from nectere.classes.wallet_client_base import Balance, Signature
+from moove.classes.wallet_client_base import Balance, Signature
 from web3 import Web3
 from web3.types import Wei, TxParams
 from eth_utils.address import to_checksum_address
 from eth_account.messages import encode_typed_data
 
-from nectere.types.chain import EvmChain
-from nectere_wallets.evm import EVMWalletClient
-from nectere_wallets.evm.types import (
+from moove.types.chain import EvmChain
+from moove_wallets.evm import EVMWalletClient
+from moove_wallets.evm.types import (
     EVMTransaction,
     EVMReadRequest,
     EVMReadResult,

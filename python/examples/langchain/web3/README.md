@@ -1,6 +1,6 @@
-# Nectere LangChain Web3 Example
+# MooveSDK LangChain Web3 Example
 
-This example demonstrates how to use Nectere with LangChain and web3.py to create an AI agent capable of interacting with EVM-compatible blockchains.
+This example demonstrates how to use MooveSDK with LangChain and web3.py to create an AI agent capable of interacting with EVM-compatible blockchains.
 
 ## Features
 
@@ -43,4 +43,4 @@ This will initialize an AI agent that can:
 
 ## Learn More
 
-Check out the [Nectere documentation](https://github.com/nectere-sdk/nectere) for more examples and detailed guides.
+Check out the [MooveSDK documentation](https://github.com/mondaywe/moovesdk) for more examples and detailed guides.

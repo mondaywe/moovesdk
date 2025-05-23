@@ -12,11 +12,11 @@ from web3.middleware.signing import construct_sign_and_send_raw_middleware
 from eth_account.signers.local import LocalAccount
 from eth_account import Account
 
-from bookbag_adapters.langchain import get_on_chain_tools
-from bookbag_plugins.erc20.token import PEPE, USDC
-from bookbag_plugins.erc20 import erc20, ERC20PluginOptions
-from bookbag_wallets.evm import send_eth
-from bookbag_wallets.web3 import Web3EVMWalletClient
+from moove_adapters.langchain import get_on_chain_tools
+from moove_plugins.erc20.token import PEPE, USDC
+from moove_plugins.erc20 import erc20, ERC20PluginOptions
+from moove_wallets.evm import send_eth
+from moove_wallets.web3 import Web3EVMWalletClient
 
 # Initialize Web3 and account
 w3 = Web3(Web3.HTTPProvider(os.getenv("RPC_PROVIDER_URL")))

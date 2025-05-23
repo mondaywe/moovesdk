@@ -4,9 +4,9 @@ from typing import Dict, List, cast
 from pydantic import BaseModel, Field
 from evmchains.chains import PUBLIC_CHAIN_META
 
-from nectere.classes.plugin_base import PluginBase
-from nectere.classes.tool_base import ToolBase, create_tool
-from nectere.types.chain import Chain
+from moove.classes.plugin_base import PluginBase
+from moove.classes.tool_base import ToolBase, create_tool
+from moove.types.chain import Chain
 
 from .evm_smart_wallet_client import EVMWalletClient
 

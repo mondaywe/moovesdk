@@ -2,18 +2,18 @@ from typing import List, TypeVar, Any
 
 from langchain_core.tools import BaseTool
 from langchain_core.tools.structured import StructuredTool
-from nectere import ToolBase, WalletClientBase, get_tools
+from moove import ToolBase, WalletClientBase, get_tools
 
 
 def get_on_chain_tools(wallet: WalletClientBase, plugins: List[Any]) -> List[BaseTool]:
-    """Create LangChain tools from Nectere tools.
+    """Create LangChain tools from MooveSDK tools.
 
     Args:
         wallet: A wallet client instance
         plugins: List of plugin instances
 
     Returns:
-        List of LangChain Tool instances configured with the Nectere tools
+        List of LangChain Tool instances configured with the MooveSDK tools
     """
     tools: List[ToolBase] = get_tools(wallet=wallet, plugins=plugins)
 
@@ -22,7 +22,7 @@ def get_on_chain_tools(wallet: WalletClientBase, plugins: List[Any]) -> List[Bas
 
     langchain_tools = []
     for t in tools:
-        # Create a LangChain Tool for each Nectere tool
+        # Create a LangChain Tool for each MooveSDK tool
         tool = StructuredTool(
             name=t.name,
             description=t.description,

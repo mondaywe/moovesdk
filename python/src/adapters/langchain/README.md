@@ -1,3 +1,3 @@
-## Nectere SDK LangChain Adapter
+## MooveSDK LangChain Adapter
 
-This adapter provides LangChain integration for the Nectere SDK, enabling LangChain-based AI agents to seamlessly interact with blockchain functionality through the Nectere toolkit.
+This adapter provides LangChain integration for the MooveSDK, enabling LangChain-based AI agents to seamlessly interact with blockchain functionality through the MooveSDK toolkit.

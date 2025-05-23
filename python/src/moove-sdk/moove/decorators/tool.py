@@ -3,8 +3,8 @@ from typing import Any, Callable, NotRequired, Type, TypedDict
 import inspect
 from pydantic import BaseModel
 
-from nectere.classes.wallet_client_base import WalletClientBase
-from nectere.utils.snake_case import snake_case
+from moove.classes.wallet_client_base import WalletClientBase
+from moove.utils.snake_case import snake_case
 
 
 class ToolDecoratorParams(TypedDict):
@@ -66,7 +66,7 @@ class StoredToolMetadata:
     wallet_client: WalletClientMetadata
 
 
-TOOL_METADATA_KEY = "__nectere_tool__"
+TOOL_METADATA_KEY = "__moove_tool__"
 
 
 def Tool(tool_params: ToolDecoratorParams) -> Any:

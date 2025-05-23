@@ -1,28 +1,28 @@
 [tool.poetry]
-name = "bookbag-sdk-wallet-web3"
+name = "moove-sdk-wallet-web3"
 version = "0.1.1"
-description = "Bookbag SDK Web3 wallet implementation"
+description = "MooveSDK Web3 wallet implementation"
 authors = ["Andrea Villa <andreakarimodm@gmail.com>"]
 readme = "README.md"
-keywords = ["bookbag", "sdk", "web3", "agents", "ai", "evm", "wallet"]
-homepage = "https://github.com/bookbag-sdk/bookbag"
-repository = "https://github.com/bookbag-sdk/bookbag"
+keywords = ["moove", "sdk", "web3", "agents", "ai", "evm", "wallet"]
+homepage = "https://github.com/mondaywe/moovesdk"
+repository = "https://github.com/mondaywe/moovesdk"
 packages = [
-    { include = "bookbag_wallets/web3" },
+    { include = "moove_wallets/web3" },
 ]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-bookbag-sdk = "^0.1.0"
+moove-sdk = "^0.1.0"
 web3 = "^6.20.3"
-bookbag-sdk-wallet-evm = "^0.1.0"
+moove-sdk-wallet-evm = "^0.1.0"
 
 [tool.poetry.group.test.dependencies]
 pytest = "^8.3.4"
 pytest-asyncio = "^0.25.0"
 
 [tool.poetry.urls]
-"Bug Tracker" = "https://github.com/bookbag-sdk/bookbag/issues"
+"Bug Tracker" = "https://github.com/mondaywe/moovesdk/issues"
 
 [tool.pytest.ini_options]
 addopts = [
@@ -37,8 +37,8 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.8.6"
-bookbag-sdk = { path = "../../bookbag-sdk", develop = true }
-bookbag-sdk-wallet-evm = { path = "../../wallets/evm", develop = true }
+moove-sdk = { path = "../../moove-sdk", develop = true }
+moove-sdk-wallet-evm = { path = "../../wallets/evm", develop = true }
 
 [tool.ruff]
 line-length = 120

@@ -1,12 +1,12 @@
 [tool.poetry]
-name = "nectere-sdk-example-langchain-web3"
+name = "moove-sdk-example-langchain-web3"
 version = "0.1.0"
-description = "Nectere example for Langchain with web3.py"
+description = "MooveSDK example for Langchain with web3.py"
 authors = ["Andrea Villa <andreakarimodm@gmail.com>"]
 readme = "README.md"
-keywords = ["nectere", "sdk", "web3", "agents", "ai"]
-homepage = "https://github.com/nectere-sdk/nectere"
-repository = "https://github.com/nectere-sdk/nectere"
+keywords = ["moove", "sdk", "web3", "agents", "ai"]
+homepage = "https://github.com/mondaywe/moovesdk"
+repository = "https://github.com/mondaywe/moovesdk"
 packages = [
     { include = "src" },
 ]
@@ -17,18 +17,18 @@ langchain = "^0.3.2"
 langchain-openai = "^0.2.14"
 python-dotenv = "^1.0.1" 
 web3 = "^6.20.3"
-nectere-sdk = "^0.1.0"
-nectere-sdk-wallet-evm = "^0.1.0"
-nectere-sdk-wallet-web3 = "^0.1.0"
-nectere-sdk-plugin-erc20 = "^0.1.0"
-nectere-sdk-adapter-langchain = "^0.1.0"
+moove-sdk = "^0.1.0"
+moove-sdk-wallet-evm = "^0.1.0"
+moove-sdk-wallet-web3 = "^0.1.0"
+moove-sdk-plugin-erc20 = "^0.1.0"
+moove-sdk-adapter-langchain = "^0.1.0"
 
 [tool.poetry.group.test.dependencies]
 pytest = "^8.3.4"
 pytest-asyncio = "^0.25.0"
 
 [tool.poetry.urls]
-"Bug Tracker" = "https://github.com/nectere-sdk/nectere/issues"
+"Bug Tracker" = "https://github.com/mondaywe/moovesdk/issues"
 
 [tool.pytest.ini_options]
 addopts = [
@@ -43,11 +43,11 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.8.6"
-nectere-sdk = { path = "../../../src/nectere-sdk", develop = true }
-nectere-sdk-wallet-evm = { path = "../../../src/wallets/evm", develop = true }
-nectere-sdk-wallet-web3 = { path = "../../../src/wallets/web3", develop = true }
-nectere-sdk-plugin-erc20 = { path = "../../../src/plugins/erc20", develop = true }
-nectere-sdk-adapter-langchain = { path = "../../../src/adapters/langchain", develop = true }
+moove-sdk = { path = "../../../src/moove-sdk", develop = true }
+moove-sdk-wallet-evm = { path = "../../../src/wallets/evm", develop = true }
+moove-sdk-wallet-web3 = { path = "../../../src/wallets/web3", develop = true }
+moove-sdk-plugin-erc20 = { path = "../../../src/plugins/erc20", develop = true }
+moove-sdk-adapter-langchain = { path = "../../../src/adapters/langchain", develop = true }
 
 [tool.ruff]
 line-length = 120

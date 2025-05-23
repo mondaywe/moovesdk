@@ -1,21 +1,18 @@
 <div align="center">
-  <img src="logo.jpg" alt="Bookbag" width="100" height="100">
-  <h1>Bookbag</h1>
+  <h1>MooveSDK</h1>
   <p>All-in-one framework for Solana AI development and learning</p>
-  <p>A passion project by <a href="https://x.com/shek_dev">@shek_dev</a></p>
-
 </div>
 
 <div align="center">
 
-  <a href="https://x.com/bookbag">
-    <img src="https://img.shields.io/twitter/follow/bookbag?style=social" alt="Twitter Follow">
+  <a href="https://x.com/moove">
+    <img src="https://img.shields.io/twitter/follow/moove?style=social" alt="Twitter Follow">
   </a>
 </div>
 
 ## Overview
 
-Bookbag is an open-source framework that empowers AI agents with Solana-native capabilities. Built from the ground up for Solana, it provides a comprehensive suite of tools for building intelligent on-chain applications:
+MooveSDK is an open-source framework that empowers AI agents with Solana-native capabilities. Built from the ground up for Solana, it provides a comprehensive suite of tools for building intelligent on-chain applications:
 
 - 🎯 **Solana-Native**: Deep integration with Solana's ecosystem - SPL tokens, Metaplex NFTs, and Jupiter DEX
 - 🤖 **AI-Powered**: LangChain integration for natural language interactions with Solana programs and data
@@ -49,9 +46,9 @@ Bookbag is an open-source framework that empowers AI agents with Solana-native c
 
 ### Solana Trading Bot
 ```python
-from bookbag.agents import SolanaTrader
-from bookbag.plugins import JupiterDex, PythOracle
-from bookbag.strategies import MeanReversion
+from moove.agents import SolanaTrader
+from moove.plugins import JupiterDex, PythOracle
+from moove.strategies import MeanReversion
 
 # Create an AI-powered Solana trading bot
 agent = SolanaTrader(
@@ -78,8 +75,8 @@ await agent.trade(
 
 ### Program Analysis
 ```python
-from bookbag.agents import ProgramAnalyzer
-from bookbag.plugins import AnchorScanner
+from moove.agents import ProgramAnalyzer
+from moove.plugins import AnchorScanner
 
 # Analyze Solana program security
 analyzer = ProgramAnalyzer(
@@ -100,19 +97,19 @@ print(analysis.optimization_tips)
 
 ```bash
 # Core SDK with Solana features
-pip install "bookbag-sdk[solana]"
+pip install "moove-sdk[solana]"
 
 # Minimal installation
-pip install bookbag-sdk
+pip install moove-sdk
 
 # Optional plugins
-pip install bookbag-sdk-plugin-jupiter bookbag-sdk-plugin-pyth
+pip install moove-sdk-plugin-jupiter moove-sdk-plugin-pyth
 ```
 
 ## Links
 
-Follow [@bookbag](https://x.com/bookbag) and [@shek_dev](https://x.com/shek_dev)
+Follow [@moovesdk](https://x.com/moove)
 
 ## License
 
-Bookbag is open source under the [MIT License](LICENSE).
+MooveSDK is open source under the [MIT License](LICENSE).

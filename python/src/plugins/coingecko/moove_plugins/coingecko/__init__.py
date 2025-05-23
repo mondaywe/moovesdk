@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 
-from nectere.classes.plugin_base import PluginBase
+from moove.classes.plugin_base import PluginBase
 from .service import CoinGeckoService
 
 

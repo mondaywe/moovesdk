@@ -2,8 +2,8 @@ from abc import ABC, abstractmethod
 from dataclasses import dataclass
 from typing import Any, Dict, List, Optional
 
-from nectere.classes.tool_base import ToolBase, create_tool
-from nectere.types.chain import Chain
+from moove.classes.tool_base import ToolBase, create_tool
+from moove.types.chain import Chain
 
 
 @dataclass

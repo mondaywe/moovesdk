@@ -1,8 +1,8 @@
 from abc import abstractmethod
 from typing import Dict
 
-from nectere.types.chain import EvmChain
-from nectere.classes.wallet_client_base import Signature, WalletClientBase
+from moove.types.chain import EvmChain
+from moove.classes.wallet_client_base import Signature, WalletClientBase
 
 from .types import EVMTransaction, EVMReadRequest, EVMReadResult, EVMTypedData
 
