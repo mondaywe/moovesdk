@@ -110,6 +110,7 @@ pip install moove-sdk-plugin-jupiter moove-sdk-plugin-pyth
 
 Follow [@moovesdk](https://x.com/moove)
 
+
 ## License
 
 MooveSDK is open source under the [MIT License](LICENSE).
